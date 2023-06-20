@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo_Web</title>
+  <link rel="stylesheet" href="./main_styles.css">
+  <link rel="icon" type="image/x-icon" href="./picture/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/photo.js"></script>
+  <script>function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+function toggleIcon(iconId, textId, contentId) {
+  var icon = document.getElementById(iconId);
+  var text = document.getElementById(textId);
+  var content = document.getElementById(contentId);
+  
+  if (icon.classList.contains("fa-plus")) {
+    icon.classList.remove("fa-plus");
+    icon.classList.add("fa-angle-down");
+    content.style.display = "block";
+  } else {
+    icon.classList.remove("fa-angle-down");
+    icon.classList.add("fa-plus");
+    content.style.display = "none";
+  }
+}
+
+function scrollToElement(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+
+// Функция для проверки авторизации
+function validateLogin() {
+  var login = document.getElementById('login_input').value;
+  var password = document.getElementById('pass_input').value;
+
+  // Загрузка содержимого файла users.json
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var users = JSON.parse(xhr.responseText).users;
+
+      // Поиск пользователя по логину и паролю
+      var foundUser = users.find(function(user) {
+        return user.login === login && user.password === password;
+      });
+
+      if (foundUser) {
+        // Перенаправление на страницу my_profile.html
+        window.location.href = 'my_profile.html';
+      } else {
+        var errorMessage = document.getElementById('errorMessage');
+        errorMessage.textContent = 'Невірний логін або пароль';
+        errorMessage.style.display = 'block';
+      }
+    }
+  };
+  xhr.open('GET', 'users.json', true);
+  xhr.send();
+}
+</script>
+  <style>
+	@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&family=Montserrat+Alternates&display=swap');
+    </style>
+</head>
+<body>
+  <header class="second_page">
+   <h1 id="logo"><a href="./index.html">
+    <img src="./picture/logo_black.png" alt="" >
+   </a></h1>
+   <nav id="navbar">
+    <ul>
+      <li><a href="./about_page.html">про нас</a></li>
+      <li><a href="./faq_page.html">faqs</a></li>
+      <li><a href="./contacts_page.html">контакти</a></li>
+      <li><a href="./prog_page.html">програма курсу</a></li>
+      <li><a href="./blog_page.html">блог</a></li>
+      <li><a id="heart" href="#">&#x2661;</a></li>
+      <li><a  class="camera-icon"  id="heart" href="./login_page.html"  >&#x1F4F7;</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div id="contact_main">
+  <div id="contact_block">
+    <p id="contact_info">Контакти</p>
+    <ul class="menu">
+        <li class="big_contact" id="geo_icon">Адреса офісу</li>
+        <li><a href="https://www.google.com/maps/place/вулиця+Київська,+1,+Київ,+02000/@50.3786081,30.4030852,13z/data=!4m9!1m2!2m1!1z0LLRg9C70LjRhtGPINCa0LjRl9Cy0YHRjNC60LAsIDEsINCa0LjRl9CyLCAwMjAwMA!3m5!1s0x40d4c90fceb8106b:0xa2badba6ef620b0!8m2!3d50.3855864!4d30.4383509!15sCjHQstGD0LvQuNGG0Y8g0JrQuNGX0LLRgdGM0LrQsCwgMSwg0JrQuNGX0LIsIDAyMDAwkgEQZ2VvY29kZWRfYWRkcmVzc-ABAA?entry=ttu">М.Київ, вул.Київська, офіс 1</a></li>
+        <li class="big_contact" id="phone_icon">Номер телефону</li>
+        <li>+380990000000</li>
+        <li>+380670000000</li>
+        <li class="big_contact" id="mail_icon">Електронна пошта</li>
+        <li>photostudIo@gmail.com</li>
+    </ul>
+  </div>
+  <div id="contact_input">
+    <p id="input_info">Зворотній зв'язок</p>
+    <form>
+      <input type="text" id="name_input" name="name" placeholder="Ваше ім’я*" required pattern="^[A-Za-zА-Яа-яЁё\s]{2,}$" oninvalid="this.setCustomValidity('УПС! Здається, Ви ввели не ім'я')">
+
+        <input type="tel" id="phone_input" name="phone" placeholder="Номер телефону*" required pattern="^\+380\d{9}$" oninvalid="this.setCustomValidity('Будь-ласка, введіть телефон у форматі +380000000000')">
+
+        <input type="text" id="message_input" name="message" placeholder="Повідомлення" >
+        <button type="submit">Відправити</button>
+		
+      </form>
+  </div>
+</div>
+  <button onclick="scrollToTop()" id="scroll-to-top" title="Наверх">
+    <i class="fa fa-angle-up"></i>
+  </button>
+
+
+
+  <footer>
+    <div class="footer-column">
+    <h1 id="logo_bottom"><a href="./index.html">Photostudio</a></h1>
+    <a href="https://www.instagram.com/ntu.khpi/"class="instagram-icon"><i class="fa fa-instagram"></i></a>
+    <a href="https://t.me/s/NTU_KhPI_press"class="telegram-icon"><i class="fa fa-telegram"></i></a>
+    </div>
+    <div class="footer-column">
+      <ul id="bottom_nav">
+        <li><a href="./index.html" id="first_list">Меню</a></li>
+        <li><a href="./faq_page.html">faqs</a></li>
+        <li><a href="./contacts_page.html">контакти</a></li>
+        <li><a href="./prog_page.html">програма курсу</a></li>
+        <li><a href="./blog_page.html">блог</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <ul id="bottom_nav_2">
+        <li id="first_list">Контакти</li>
+        <li>М.Київ, вул.Київська, офіс 1</li>
+        <li>+380990000000</li>
+        <li>+380670000000</li>
+        <li>photostudIo@gmail.com</li>
+      </ul>
+    </div>
+    <div id="after_text">
+      <p>photostudIo-@2023</p>
+    </div>
+  </footer>
+</body>
+</html>

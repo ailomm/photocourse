@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo_Web</title>
+  <link rel="stylesheet" href="./main_styles.css">
+  <link rel="icon" type="image/x-icon" href="./picture/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/photo.js"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&family=Montserrat+Alternates&display=swap');
+    </style>
+</head>
+<body>
+  <header class="second_page">
+   <h1 id="logo"><a href="./index.html">
+    <img src="./picture/logo_black.png" alt="" >
+   </a></h1>
+   <nav id="navbar">
+    <ul>
+      <li><a href="./about_page.html">про нас</a></li>
+      <li><a href="./faq_page.html">faqs</a></li>
+      <li><a href="./contacts_page.html">контакти</a></li>
+      <li><a href="./prog_page.html">програма курсу</a></li>
+      <li><a href="./blog_page.html">блог</a></li>
+      <li><a id="heart" href="#">&#x2661;</a></li>
+      <li><a  class="camera-icon"  id="heart" href="./login_page.html"  >&#x1F4F7;</a></li>
+    </ul>
+  </nav>
+  </header>
+
+<div id="my_profile">
+  <p id="my_profile_text">Вітаємо</p>
+</div>
+
+
+  <button onclick="scrollToTop()" id="scroll-to-top" title="Наверх">
+    <i class="fa fa-angle-up"></i>
+  </button>
+  
+<footer>
+  <div class="footer-column">
+  <h1 id="logo_bottom"><a href="./index.html">Photostudio</a></h1>
+  <a href="https://www.instagram.com/ntu.khpi/"class="instagram-icon"><i class="fa fa-instagram"></i></a>
+  <a href="https://t.me/s/NTU_KhPI_press"class="telegram-icon"><i class="fa fa-telegram"></i></a>
+  </div>
+  <div class="footer-column">
+    <ul id="bottom_nav">
+      <li><a href="./index.html" id="first_list">Меню</a></li>
+      <li><a href="./faq_page.html">faqs</a></li>
+      <li><a href="./contacts_page.html">контакти</a></li>
+      <li><a href="./prog_page.html">програма курсу</a></li>
+      <li><a href="./blog_page.html">блог</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <ul id="bottom_nav_2">
+      <li id="first_list">Контакти</li>
+      <li>М.Київ, вул.Київська, офіс 1</li>
+      <li>+380990000000</li>
+      <li>+380670000000</li>
+      <li>photostudIo@gmail.com</li>
+    </ul>
+  </div>
+  <div id="after_text">
+    <p>photostudIo-@2023</p>
+  </div>
+</footer>
+</body>
+</html>

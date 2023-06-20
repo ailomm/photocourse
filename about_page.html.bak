@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo_Web</title>
+  <link rel="stylesheet" href="./main_styles.css">
+  <link rel="icon" type="image/x-icon" href="./picture/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/photo.js"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&family=Montserrat+Alternates&display=swap');
+    </style>
+</head>
+<body>
+  <header class="second_page">
+   <h1 id="logo"><a href="./index.html">
+    <img src="./picture/logo_black.png" alt="" >
+   </a></h1>
+   <nav id="navbar">
+    <ul>
+      <li><a href="./about_page.html">про нас</a></li>
+      <li><a href="./faq_page.html">faqs</a></li>
+      <li><a href="./contacts_page.html">контакти</a></li>
+      <li><a href="./prog_page.html">програма курсу</a></li>
+      <li><a href="./blog_page.html">блог</a></li>
+      <li><a id="heart" href="#">&#x2661;</a></li>
+      <li><a  class="camera-icon"  id="heart" href="./login_page.html"  >&#x1F4F7;</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div id="about_info">
+    <p id="about_text">Про нас</p>
+    <p id="main_text">Ласкаво просимо на сторінку курсів фотографії 
+      в Україні! Ми - команда професіоналів, які прагнуть поділитися своїми 
+      знаннями, навичками та пристрастю до фотографії з вами. <br><br>
+      Наша мета полягає в тому, щоб допомогти кожному, хто бажає розвинути 
+      свої фотографічні навички та відкрити для себе захоплюючий світ фотографії. 
+      Незалежно від вашого рівня підготовки, ми створили цілеспрямовану та добре 
+      структуровану програму курсу, яка дозволить вам пройти шлях від початківця до професіонала. <br><br>
+      Наша команда включає в себе висококваліфікованих фахівців з великим
+       досвідом у галузі фотографії. Кожен із нас працює з різними жанрами та стилями 
+       фотографії, що дозволяє нам передати вам багатоцінний досвід у різних сферах. 
+       Ми прагнемо створити стимулююче та дружнє навчальне середовище, де ви зможете 
+       розвиватися, експериментувати та виражати свою творчість.</p>
+  </div>
+<div id="our_photos">
+  <div class="image-text">
+  <img src="./picture/nata.png" id="img_text_1" alt="Наталя Ковальчук">
+  <p>Наталя Ковальчук</p><br>
+  <p> Наталя спеціалізується на портретній фотографії та ретушуванні, її роботи часто відзначаються за їхню естетику та високу якість. Як викладач, Наталя надає студентам цінні вказівки щодо композиції, освітлення та позування, а також ділиться своїми секретами ретушування, щоб допомогти студентам створити захоплюючі портрети.</p>
+  </div>
+  <div class="image-text">
+  <img src="./picture/alex.png" id="img_text_2"alt="Олександр Васильєнко">
+  <p>Олександр Васильєнко</p><br>
+  <p>Олександр має глибокі знання про вибір місць для зйомки, використання фільтрів та обробку пейзажних знімків. Як викладач, він допомагає студентам освоїти техніки пейзажної фотографії, навчає їх знаходити найкращі кадри та використовувати освітлення для створення вражаючих пейзажних знімків. .</p>
+  </div>
+  <div class="image-text">
+  <img src="./picture/oksana.png" id="img_text_3"alt="Оксана Іваненко">
+  <p>Оксана Іваненко</p><br>
+  <p>Оксана заслужено відома своїми здатностями вловлювати неповторні моменти та передавати емоції через свої знімки. Як викладачка, Оксана стимулює творчість студентів, навчає їх технікам фотожурналістики та репортажної фотографії. Вона ділиться своїм досвідом з планування зйомок, вибору кадру та .</p>
+  </div>
+</div>
+<div id="about_info_2">
+  <p id="main_text_2">Наші курси фокусуються на практичних навичках, а також теоретичних знаннях, необхідних для створення вражаючих фотографій. Ми пропонуємо заняття з різних жанрів фотографії, від портретної та пейзажної до архітектурної та нічної. Наші заняття включають лекції, демонстрації, практичні вправи та обговорення результатів, щоб забезпечити вам повноцінне навчання та розвиток. <br><br>
+    Ми прагнемо створити відкриту та дружню спільноту фотографів, де ви зможете знайти інспірацію, отримати конструктивний фідбек та обмінятися досвідом з однодумцями. Ми регулярно організовуємо фотовиставки, конкурси та зустрічі, які допоможуть вам показати свої творчі досягнення та знайти нових друзів у світі фотографії. <br><br>
+    
+    Приєднуйтеся до наших курсів фотографії в Україні та розкрийте свій творчий потенціал у цій захоплюючій галузі. Незалежно від того, чи мрієте ви стати професіональним фотографом, чи просто хочете освоїти навички фотографування для особистого задоволення, ми тут, щоб підтримати вас на цьому шляху.
+    </p>
+    <p id="about_text_bold">
+      Запишіться на наші курси фотографії   вже сьогодні та розпочніть захоплюючу подорож у світ фотографії!
+    </p>
+</div>
+<div id="gallery_text">
+  <p>Галерея</p>
+</div>
+  <div id="gallery">
+  <img src="./picture/gallery_1.png" alt="Галерея">
+ <button onclick="scrollToTop()" id="scroll-to-top" title="Наверх">
+  <i class="fa fa-angle-up"></i>
+</button>
+
+  
+  </div>
+
+<footer>
+  <div class="footer-column">
+  <h1 id="logo_bottom"><a href="./index.html">Photostudio</a></h1>
+  <a href="https://www.instagram.com/ntu.khpi/"class="instagram-icon"><i class="fa fa-instagram"></i></a>
+  <a href="https://t.me/s/NTU_KhPI_press"class="telegram-icon"><i class="fa fa-telegram"></i></a>
+  </div>
+  <div class="footer-column">
+    <ul id="bottom_nav">
+      <li><a href="./index.html" id="first_list">Меню</a></li>
+      <li><a href="./faq_page.html">faqs</a></li>
+      <li><a href="./contacts_page.html">контакти</a></li>
+      <li><a href="./prog_page.html">програма курсу</a></li>
+      <li><a href="./blog_page.html">блог</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <ul id="bottom_nav_2">
+      <li id="first_list">Контакти</li>
+      <li>М.Київ, вул.Київська, офіс 1</li>
+      <li>+380990000000</li>
+      <li>+380670000000</li>
+      <li>photostudIo@gmail.com</li>
+    </ul>
+  </div>
+  <div id="after_text">
+    <p>photostudIo-@2023</p>
+  </div>
+</footer>
+</body>
+</html>

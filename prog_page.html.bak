@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo_Web</title>
+  <link rel="stylesheet" href="./main_styles.css">
+  <link rel="icon" type="image/x-icon" href="./picture/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/photo.js"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&family=Montserrat+Alternates&display=swap');
+    </style>
+</head>
+<body>
+  <header class="second_page">
+    <h1 id="logo"><a href="./index.html">
+      <img src="./picture/logo_black.png" alt="" >
+     </a></h1>
+   <nav id="navbar">
+    <ul>
+      <li><a href="./about_page.html">про нас</a></li>
+      <li><a href="./faq_page.html">faqs</a></li>
+      <li><a href="./contacts_page.html">контакти</a></li>
+      <li><a href="./prog_page.html">програма курсу</a></li>
+      <li><a href="./blog_page.html">блог</a></li>
+      <li><a id="heart" href="#">&#x2661;</a></li>
+      <li><a  class="camera-icon"  id="heart" href="./login_page.html"  >&#x1F4F7;</a></li>
+    </ul>
+  </nav>
+  </header>
+  <div id="about_course_info">
+    <p id="about_course">Програма курсу</p>
+    <p id="about_course_2">Тривалість: 10 тижнів (1 заняття на тиждень) <br> Час: 2 години на заняття</p>
+  </div>
+
+
+<div id="course_main">
+    <div class="block">
+        <p class="week">Тиждень 1</p>
+        <ul>
+            <li>Вступ до фотографії</li>
+            <li>Ознайомлення з фотокамерою та її налаштуваннями</li>
+            <li>Режими експозиції: автоматичний, полуавтоматичний, ручний</li>
+            <li>Композиція та рамкивання</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 2</p>
+        <ul>
+            <li>Вплив світла на фотографію</li>
+            <li>Використання природного світла</li>
+            <li>Використання штучного освітлення</li>
+            <li>Контрастність та тіні</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 3</p>
+        <ul>
+            <li>Портретна фотографія</li>
+            <li>Техніки зйомки портретів</li>
+            <li>Вибір фокусу та глибини різкості</li>
+            <li>Ретушування та обробка портретів</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 4</p>
+        <ul>
+            <li>Пейзажна фотографія</li>
+            <li>Вибір ракурсів та композицій в пейзажній фотографії</li>
+            <li>Використання фільтрів та додаткових об'єктивів</li>
+            <li>Корекція кольорів та ретушування пейзажних знімків</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 5</p>
+        <ul>
+            <li>Макрофотографія</li>
+            <li>Вибір об'єктивів для макрозйомки</li>
+            <li>Контроль глибини різкості в макрофотографії</li>
+            <li>Ретушування та підвищення деталей у макрознімках</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 6</p>
+        <ul>
+            <li>Архітектурна фотографія</li>
+            <li>Вибір кадру та перспективи</li>
+            <li>Корекція перспективи та ліній</li>
+            <li>Ретушування та обробка архітектурних знімків</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 7</p>
+        <ul>
+            <li>Нічна фотографія</li>
+            <li>Використання довгих витримок та тримача</li>
+            <li>Контроль шуму в нічних знімках</li>
+            <li>Обробка та підсвічування нічних фотографій</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 8</p>
+        <ul>
+            <li>Спортивна фотографія</li>
+            <li>Вибір швидкості затвора та режимів фокусування</li>
+            <li>Захоплення руху та фіксація емоцій</li>
+            <li>Ретушування та обробка спортивних знімків</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 9</p>
+        <ul>
+            <li>Студійна фотографія</li>
+            <li>Використання студійного світла та спалахів</li>
+            <li>Вибір фону та реквізиту</li>
+            <li>Ретушування та обробка студійних портретів</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p class="week">Тиждень 10</p>
+        <ul>
+            <li>Фотожурналістика та репортажна фотографія</li>
+            <li>Знімання на подіях та в умовах обмеженого доступу</li>
+            <li>Композиція та вибір моменту зйомки</li>
+            <li>Ретушування та обробка фотожурналістичних знімків</li>
+        </ul>
+    </div>
+    <div class="block">
+        <p id="congrat">Вітаю з успішним закінченням курсу ! </p>
+    </div>
+</div>
+
+
+  <button onclick="scrollToTop()" id="scroll-to-top" title="Наверх">
+    <i class="fa fa-angle-up"></i>
+  </button>
+
+
+
+  <footer>
+    <div class="footer-column">
+    <h1 id="logo_bottom"><a href="./index.html">Photostudio</a></h1>
+    <a href="https://www.instagram.com/ntu.khpi/"class="instagram-icon"><i class="fa fa-instagram"></i></a>
+    <a href="https://t.me/s/NTU_KhPI_press"class="telegram-icon"><i class="fa fa-telegram"></i></a>
+    </div>
+    <div class="footer-column">
+      <ul id="bottom_nav">
+        <li><a href="./index.html" id="first_list">Меню</a></li>
+        <li><a href="./faq_page.html">faqs</a></li>
+        <li><a href="./contacts_page.html">контакти</a></li>
+        <li><a href="./prog_page.html">програма курсу</a></li>
+        <li><a href="./blog_page.html">блог</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <ul id="bottom_nav_2">
+        <li id="first_list">Контакти</li>
+        <li>М.Київ, вул.Київська, офіс 1</li>
+        <li>+380990000000</li>
+        <li>+380670000000</li>
+        <li>photostudIo@gmail.com</li>
+      </ul>
+    </div>
+    <div id="after_text">
+      <p>photostudIo-@2023</p>
+    </div>
+  </footer>
+</body>
+</html>
